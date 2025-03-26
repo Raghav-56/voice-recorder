@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "voice-recorder"
+version = "0.1.0"
+description = "Voice recording application"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyaudio = "^0.2.14"
+sounddevice = "^0.5.1"
+numpy = "^2.2.4"
+simpleaudio = "^1.0.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

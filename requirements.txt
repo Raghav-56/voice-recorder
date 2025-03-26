@@ -1,6 +1,6 @@
-pyaudio
-sounddevice
-numpy
-playsound
+pyaudio==0.2.14
+sounddevice==0.5.1
+numpy==2.2.4
+simpleaudio==1.0.4  # More reliable alternative to playsound
 flask
 werkzeug

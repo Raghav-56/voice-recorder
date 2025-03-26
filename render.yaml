@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: voice-recorder
+    env: python
+    buildCommand: |
+      pip install poetry
+      poetry config virtualenvs.create false
+      poetry install --no-dev
+    startCommand: python app.py # Replace with your actual entry point
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.3
+
+preInstallCommand: | # Install system dependencies
+  apt-get update -y && apt-get install -y portaudio19-dev python3-pyaudio

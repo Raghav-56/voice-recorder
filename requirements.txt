@@ -1,0 +1,6 @@
+pyaudio
+sounddevice
+numpy
+playsound
+flask
+werkzeug
